@@ -47,11 +47,14 @@ body {
 }
 body {
 	background-color: var(--clr-primary);
+	display: flex;
+	flex-direction: column;
+	align-items: safe center;
+	justify-content: safe center;
 	overflow-y: visible;
 }
 
 header {
-	padding: 4.5% 0 3.9%;
 	text-align: center;
 	max-width: 504px;
 	margin: 0 auto;
@@ -63,7 +66,7 @@ header > p {
 main {
 	width: 80vw;
 	margin: 0 auto;
-	padding-bottom: 4.5%;
+	padding: 3.5% 0 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 30px;
@@ -76,7 +79,7 @@ main {
 	justify-self: center;
 	align-self: center;
 	width: 100%;
-	padding: 10.14% 12%;
+	padding: 8% 12%;
 	border-radius: 5px;
 	box-shadow: 0px 10px 50px -20px hsla(234, 12%, 34%, 0.55);
 }
@@ -126,12 +129,17 @@ main {
 
 @media screen and (max-width: 699px) {
 	:root {
-		--fs-500: 1.563rem;
+		--fs-lg: 1.563rem;
+	}
+
+	body {
+		min-height: 0;
+		overflow-y: scroll;
 	}
 
 	header {
 		width: 85vw;
-		padding: 72px 0;
+		padding: 72px 0 56px;
 		max-width: 320px;
 	}
 	main {
@@ -170,6 +178,32 @@ main {
 	.card:last-child {
 		grid-column: 2;
 		grid-row: 2;
+	}
+}
+
+@media screen and (max-width: 1999px) and (min-width: 1570px) {
+	body {
+		overflow-y: hidden;
+	}
+
+	main {
+		max-width: 1256px;
+	}
+
+	.card {
+		max-width: 398px;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	:root {
+		--fs-sm: 1.5rem;
+		--fs-md: 2.2rem;
+		--fs-lg: 3rem;
+	}
+
+	header {
+		max-width: 800px;
 	}
 }
 
