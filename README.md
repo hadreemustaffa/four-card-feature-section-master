@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://hadreemustaffa.github.io/four-card-feature-section/)
 
 ## My process
 
@@ -37,7 +37,7 @@ Users should be able to:
 
 ### What I learned
 
-In mobile-view, I encountered an overflow problem. Setting overflow to scroll doesn't work. After few minutes of looking, found a solution that was:
+1. In mobile-view, I encountered an overflow problem where I cannot scroll down the overflowing content. Setting overflow to scroll doesn't work. After few minutes of looking, found a solution that was:
 
 ```css
 body {
@@ -45,9 +45,12 @@ body {
 }
 ```
 
+2. Using justify-content to center caused some problem for me. So I changed to `margin: auto` to fix the problems.
+
 ### Useful resources
 
 - [Modus Create](https://moduscreate.com/blog/how-to-fix-overflow-issues-in-css-flex-layouts/) - This is where I found the solution for the problem above, such a simple solution.
+- [Stack Overflow](https://stackoverflow.com/questions/36988406/flexbox-overflow-top-of-the-element-is-missing) - This post is quite old, but it helped me fixed the problems I had with justify-content center and align-items center.
 
 ## Author
 
