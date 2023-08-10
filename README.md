@@ -45,7 +45,7 @@ body {
 }
 ```
 
-2. Using justify-content to center caused some problem for me. So I changed to `margin: auto` to fix the problems.
+2. Using justify-content to center caused some problem for me. So I changed to `margin: auto` to fix the problems. This also fixed a problem where in mobile-view, top-part of `<header>` overflowed.
 
 ### Useful resources
 
