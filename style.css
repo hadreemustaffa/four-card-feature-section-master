@@ -44,11 +44,12 @@ body {
 }
 body {
 	background-color: var(--clr-primary);
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
+	overflow-y: visible;
 }
 
 header {
@@ -123,7 +124,47 @@ main {
 	color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 1250px) and (min-width: 768px) {
+/*----------*/
+/*	 TODO	  */
+/*----------*/
+/* @media (max-width: 768px) {
+	:root {
+		--fs-500: clamp(1.25rem, 0.8rem + 2.24vw, 1.875rem);
+		--fs-400: clamp(0.916rem, 0.6rem + 1.64vw, 1.375rem);
+		--fs-300: clamp(0.625rem, 0.4rem + 1.12vw, 0.938rem);
+	}
+
+	html,
+	body {
+		height: fit-content;
+		overflow-y: visible;
+		overflow-x: hidden;
+	}
+	header {
+		min-width: 280px;
+		max-width: 360px;
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-width: fit-content;
+		max-width: 280px;
+	}
+	.card {
+		max-width: 360px;
+		min-height: fit-content;
+	}
+} */
+
+@media (max-width: 1250px) and (min-width: 769px) {
+	html,
+	body {
+		height: fit-content;
+		overflow-y: visible;
+		overflow-x: hidden;
+	}
+
 	main {
 		margin: 0 auto;
 		gap: 0px;
