@@ -126,12 +126,12 @@ main {
 
 @media screen and (max-width: 699px) {
 	:root {
-		--fs-500: 1.5rem;
+		--fs-500: 1.563rem;
 	}
 
 	header {
-		padding: 15% 0;
-		min-width: 270px;
+		width: 85vw;
+		padding: 72px 0;
 		max-width: 320px;
 	}
 	main {
