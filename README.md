@@ -9,8 +9,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -34,23 +32,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-
-### What I learned
-
-1. In mobile-view, I encountered an overflow problem where I cannot scroll down the overflowing content. Setting overflow to scroll doesn't work. After few minutes of looking, found a solution that was:
-
-```css
-body {
-	min-height: 0;
-}
-```
-
-2. Using justify-content to center caused some problem for me. So I changed to `margin: auto` to fix the problems. This also fixed a problem where in mobile-view, top-part of `<header>` overflowed.
-
-### Useful resources
-
-- [Modus Create](https://moduscreate.com/blog/how-to-fix-overflow-issues-in-css-flex-layouts/) - This is where I found the solution for the problem above, such a simple solution.
-- [Stack Overflow](https://stackoverflow.com/questions/36988406/flexbox-overflow-top-of-the-element-is-missing) - This post is quite old, but it helped me fixed the problems I had with justify-content center and align-items center.
 
 ## Author
 
